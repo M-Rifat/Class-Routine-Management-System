@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    border: white;
+}
+
+body {
+    background-color: #F4F2FF;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    margin: 10px 60px 0px 60px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+        width: 52px;
+        height: 52px;
+}
+
+.logoDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 28px;
+    color: #1A1A1A;
+    margin-left: 10px;
+}
+
+#selectYear,
+#selectTeacher {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 16px 6px 24px;
+    margin-right: 20px;
+    width: 149px;
+    height: 37px;
+    background: #98BC4B;
+    border-radius: 8px;
+    border: 1px solid white;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+#selectYear {
+    background: #ED949B;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+select option{
+    background-color: white;
+    color: #9A8F8F;
+}
+
+.login {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 32px;
+    gap: 10px;
+    width: 110px;
+    height: 37px;
+    background: #4E4DA8;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    color: #1A1A1A;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 46px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #3D3030;
+
+}
+
+/* topHeader */
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topHeader input {
+    text-align: center;
+    color: #ffffff;
+    margin-right: 18px;
+    height: 35px;
+    left: 114px;
+    top: 366px;
+    background: rgba(223, 24, 24, 0.75);
+    box-shadow: 2px 2px 6px 1px rgba(228, 79, 82, 0.25);
+    border-radius: 8px;
+}
+
+.topHeader #day {
+    width: 78px;
+}
+
+.topHeader #year {
+    width: 114px;
+    margin-bottom: 14px;
+}
+
+.topHeader #time {
+    width: 145px;
+}
+
+/* lunch & prayer */
+.break{
+    width: 74px;
+    height: 994px;
+    margin-top: 60px;    
+    background: rgba(173, 166, 255, 0.13);
+    border-radius: 20.48px;
+}
+
+.up2 {
+    margin-top: 200px;
+}
+
+.up1 p,
+.up2 p {
+    font-weight: 700;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.2);
+    transform: rotate(-90deg);
+}
+
+/* header1 */
+.header1{
+    width: 98px;
+}
+#header1{
+    width: 78px;
+height: 170px;
+margin-top: 20px;
+background: rgba(149, 140, 255, 0.75);
+box-shadow: -1.70667px 1.70667px 5.12px 2.56px rgba(173, 166, 255, 0.27);
+border-radius: 6.82667px;
+}
+
+#header2{
+    color: #9A8F8F;
+    width: 115px;
+height: 38px;
+margin-top: 6px;
+background: #FFFFFF;
+box-shadow: 3.41333px 3.41333px 10.24px 0.853333px rgba(0, 0, 0, 0.07);
+border-radius: 6.82667px;
+}
