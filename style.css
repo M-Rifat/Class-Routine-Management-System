@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
-    border: white;
+    border-style: none;
+    outline: none;
 }
 
 body {
@@ -16,9 +17,10 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.logo{
-        width: 52px;
-        height: 52px;
+
+.logo {
+    width: 52px;
+    height: 52px;
 }
 
 .logoDetails {
@@ -62,7 +64,7 @@ h1 {
     background-size: 1em;
 }
 
-select option{
+select option {
     background-color: white;
     color: #9A8F8F;
 }
@@ -97,14 +99,25 @@ h3 {
 
 }
 
-/* topHeader */
-.topHeader {
+/* mainContent */
+.mainContent {
     display: flex;
     justify-content: space-between;
 }
 
-.topHeader input {
+.mainContent input {
+    font-weight: 700;
     text-align: center;
+}
+
+.mainContent #day,
+#year,
+#time1,
+#time2,
+#time3,
+#time4,
+#time5,
+#time6 {
     color: #ffffff;
     margin-right: 18px;
     height: 35px;
@@ -115,24 +128,31 @@ h3 {
     border-radius: 8px;
 }
 
-.topHeader #day {
+.mainContent #day {
     width: 78px;
 }
 
-.topHeader #year {
+.mainContent #year {
     width: 114px;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 }
 
-.topHeader #time {
-    width: 145px;
+.mainContent #time1,
+#time2,
+#time3,
+#time4,
+#time5,
+#time6 {
+    width: 160px;
+    margin-bottom: 15px;
 }
 
 /* lunch & prayer */
-.break{
+.break {
     width: 74px;
     height: 994px;
-    margin-top: 60px;    
+    margin-top: 45px;
+    margin-right: 15px;
     background: rgba(173, 166, 255, 0.13);
     border-radius: 20.48px;
 }
@@ -150,22 +170,32 @@ h3 {
 }
 
 /* header1 */
-.header1{
-    width: 98px;
-}
-#header1{
+.day {
+    color: #ffffff;
     width: 78px;
-height: 170px;
-margin-top: 20px;
-background: rgba(149, 140, 255, 0.75);
-box-shadow: -1.70667px 1.70667px 5.12px 2.56px rgba(173, 166, 255, 0.27);
-border-radius: 6.82667px;
+    height: 166px;
+    margin-top: 20px;
+    background: rgba(149, 140, 255, 0.75);
+    box-shadow: -1.70667px 1.70667px 5.12px 2.56px rgba(173, 166, 255, 0.27);
+    border-radius: 6.82667px;
 }
 
-#header2{
+/* header2 */
+.year {
     color: #9A8F8F;
     width: 115px;
-height: 38px;
+    height: 35px;
+    margin-top: 6px;
+    background: #FFFFFF;
+    box-shadow: 3.41333px 3.41333px 10.24px 0.853333px rgba(0, 0, 0, 0.07);
+    border-radius: 6.82667px;
+}
+
+/* header3 */
+.time1{
+    color: #9A8F8F;
+    width: 160px;
+height: 35px;
 margin-top: 6px;
 background: #FFFFFF;
 box-shadow: 3.41333px 3.41333px 10.24px 0.853333px rgba(0, 0, 0, 0.07);
