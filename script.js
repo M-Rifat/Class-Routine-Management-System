@@ -1,12 +1,12 @@
 var dis=document.querySelectorAll('input');
 var ena=document.querySelectorAll('.time1')
 
-dis.forEach(element => {
-    element.disabled = true;
-});
-ena.forEach(element => {
-    element.disabled = false;
-});
+// dis.forEach(element => {
+//     element.disabled = true;
+// });
+// ena.forEach(element => {
+//     element.disabled = false;
+// });
 
 
 

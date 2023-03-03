@@ -12,6 +12,15 @@ body {
     margin: 10px 60px 0px 60px;
 }
 
+a {
+    text-decoration: none;
+}
+
+::placeholder {
+    font-size: 12px;
+    color: #9A8F8F;
+}
+
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -87,6 +96,7 @@ h2 {
     font-weight: 600;
     font-size: 36px;
     color: #1A1A1A;
+    height: 30px;
 }
 
 h3 {
@@ -96,7 +106,33 @@ h3 {
     margin-top: 10px;
     margin-bottom: 50px;
     color: #3D3030;
+}
 
+.headDown {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.effective {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 550px;
+    padding: 6px 24px;
+    gap: 10px;
+    width: 224px;
+    height: 34px;
+    margin-bottom: 30px;
+    background: #EAE9FF;
+    border-radius: 12px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: -0.03em;
+    color: #8D8CA9;
 }
 
 /* mainContent */
@@ -214,8 +250,25 @@ h3 {
     border-radius: 6.82667px;
 }
 
+.programming {
+    width: 308px;
+    height: 165px;
+    background: #FFFFFF;
+    box-shadow: 3.41333px 3.41333px 10.24px 0.853333px rgba(0, 0, 0, 0.07);
+    border-radius: 6.82667px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 200%;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #9A8F8F;
+}
+
 /* footer */
-.footerTop {
+.footerTop,
+.mid {
     margin-top: 18px;
     display: flex;
     justify-content: space-between;
@@ -223,15 +276,15 @@ h3 {
 }
 
 .footerTop h4 {
+    font-weight: 600;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 150%;
+    line-height: 200%;
     letter-spacing: -0.02em;
-    color: #3D3030;
+    color: #1A1A1A;
 }
 
 .footerTop p {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 150%;
     letter-spacing: -0.02em;
@@ -242,17 +295,37 @@ h3 {
     margin-right: 10px;
 }
 
-.footer hr {
+hr {
     width: 1440px;
     height: 0px;
     left: 0px;
     border: 1px solid rgba(173, 166, 255, 0.19);
 }
 
+.chairman {
+    text-align: center;
+}
+
+.chairman h4 {
+    font-size: 12px;
+}
+
 .footerBottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footerBottom img {
+    width: 24px;
+    height: 24px;
+}
+
+.footerBottom a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #716E6E;
 }
 
 .footerBottom p {
