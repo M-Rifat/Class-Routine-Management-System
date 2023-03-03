@@ -116,8 +116,7 @@ h3 {
 #time2,
 #time3,
 #time4,
-#time5,
-#time6 {
+#time5 {
     color: #ffffff;
     margin-right: 18px;
     height: 35px;
@@ -140,10 +139,13 @@ h3 {
 .mainContent #time1,
 #time2,
 #time3,
-#time4,
-#time5,
-#time6 {
+#time4 {
     width: 160px;
+    margin-bottom: 15px;
+}
+
+#time5 {
+    width: 308px;
     margin-bottom: 15px;
 }
 
@@ -190,12 +192,21 @@ h3 {
 .time1,
 .time2,
 .time3,
-.time4,
-.time5,
-.time6 {
+.time4 {
     font-size: 12px;
     color: #9A8F8F;
     width: 160px;
+    height: 35px;
+    margin-top: 6px;
+    background: #FFFFFF;
+    box-shadow: 3.41333px 3.41333px 10.24px 0.853333px rgba(0, 0, 0, 0.07);
+    border-radius: 6.82667px;
+}
+
+.time5 {
+    font-size: 12px;
+    color: #9A8F8F;
+    width: 308px;
     height: 35px;
     margin-top: 6px;
     background: #FFFFFF;
@@ -207,9 +218,11 @@ h3 {
 .footerTop {
     margin-top: 18px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footerTop p {
+.footerTop h4 {
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
@@ -217,7 +230,19 @@ h3 {
     color: #3D3030;
 }
 
-hr {
+.footerTop p {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #3D3030;
+}
+
+.footerTop div {
+    margin-right: 10px;
+}
+
+.footer hr {
     width: 1440px;
     height: 0px;
     left: 0px;
