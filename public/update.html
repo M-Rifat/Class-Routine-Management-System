@@ -6,6 +6,8 @@
     <title>Class Routine,ICE</title>
     <link rel="icon" type="image/x-icon" href="icons/favicon.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 
 <body>
@@ -24,10 +26,26 @@
             </select>
             <select id="selectTeacher">
                 <option value="Teacher">Teacher</option>
-                <option value="HK">HK</option>
+                <option value="RY">RY</option>
                 <option value="DD">DD</option>
-                <option value="MH">MH</option>
+                <option value="AMAR">AMAR</option>
+                <option value="EH">EH</option>
+                <option value="RH">RH</option>
+                <option value="FA-1">FA-1</option>
+                <option value="HH">HH</option>
+                <option value="HK">HK</option>
+                <option value="SR">SR</option>
+                <option value="MRH">MRH</option>
+                <option value="RUM">RUM</option>
+                <option value="LN">LN</option>
                 <option value="GR">GR</option>
+                <option value="MH">MH</option>
+                <option value="MI">MI</option>
+                <option value="AI">AI</option>
+                <option value="FA-2">FA-2</option>
+                <option value="MZA">MZA</option>
+                <option value="NF">NF</option>
+                <option value="MA">MA</option>
             </select>
             <button class="login">Login</button>
         </div>
@@ -97,14 +115,14 @@
             <input type="text" name="" class="time1 allInput" id="tu41" value="" placeholder="ICE 4211 [AMAR/FA-1](439)">
 
             <input type="text" name="" class="time1 allInput topMargin" id="we11" value="" placeholder="ICE 3221 [MH/AI](440)">
-            <input type="text" name="" class="time1 allInput" id="we21" value="" placeholder="LAW 2211 [RY/MHI 437">
-            <input type="text" name="" class="time1 allInput" id="we31" value="" placeholder="ICE3291[GR/MI] 440">
-            <input type="text" name="" class="time1 allInput" id="we41" value="" placeholder="ICE 4241 [DD/RUM]">
+            <input type="text" name="" class="time1 allInput" id="we21" value="" placeholder="LAW 2211 [RY/MHI(437)">
+            <input type="text" name="" class="time1 allInput" id="we31" value="" placeholder="ICE 3291[GR/MI](440)">
+            <input type="text" name="" class="time1 allInput" id="we41" value="" placeholder="ICE 4241 [DD/RUM](439)">
 
             <input type="text" name="" class="time1 allInput topMargin" id="th11" value="" placeholder="PHY 1191 [LN/FA-2](403)">
-            <input type="text" name="" class="time1 allInput" id="th21" value="" placeholder="">
-            <input type="text" name="" class="time1 allInput" id="th31" value="" placeholder="">
-            <input type="text" name="" class="time1 allInput" id="th41" value="" placeholder="">
+            <input type="text" name="" class="time1 allInput" id="th21" value="" placeholder="MATH 2111 [MA](437)">
+            <input type="text" name="" class="time1 allInput" id="th31" value="" placeholder="ICE 3231 [SR/LN](440)">
+            <input type="text" name="" class="time1 allInput" id="th41" value="" placeholder="ICE 4231 [HK/EH](439)">
         </div>
         <div id="header4">
             <input type="text" name="" id="time2" value="10:05 AM - 11:00 AM" disabled="">
@@ -148,7 +166,7 @@
             <input type="text" name="" class="time3 allInput" id="mo43" value="" placeholder="">
 
             <input type="text" name="" class="time3 allInput topMargin" id="tu13" value="" placeholder="">
-            <input type="text" name="" class="time3 allInput" id="tu23" value="" placeholder="janina">
+            <input type="text" name="" class="time3 allInput" id="tu23" value="" placeholder="">
             <input type="text" name="" class="time3 allInput" id="tu33" value="" placeholder="">
             <input type="text" name="" class="time3 allInput" id="tu43" value="" placeholder="">
 
@@ -181,16 +199,16 @@
             <input type="text" name="" class="time4 allInput" id="su44" value="" placeholder="">
 
             <input type="text" name="" class="time4 allInput topMargin" id="mo14" value="" placeholder="">
-            <input type="text" name="" class="time4 allInput" id="mo24" value="" placeholder="">
+            <input type="text" name="" class="time4 allInput" id="mo24" value="" placeholder="MATH 2111 [MA](437)">
             <input type="text" name="" class="time4 allInput" id="mo34" value="" placeholder="">
             <input type="text" name="" class="time4 allInput" id="mo44" value="" placeholder="">
 
-            <input type="text" name="" class="time4 allInput topMargin" id="tu14" value="" placeholder="">
+            <input type="text" name="" class="time4 allInput topMargin" id="tu14" value="" placeholder="MATH 1111 [MZA](403)">
             <input type="text" name="" class="time4 allInput" id="tu24" value="" placeholder="">
             <input type="text" name="" class="time4 allInput" id="tu34" value="" placeholder="">
             <input type="text" name="" class="time4 allInput" id="tu44" value="" placeholder="">
 
-            <input type="text" name="" class="time4 allInput topMargin" id="we14" value="" placeholder="">
+            <input type="text" name="" class="time4 allInput topMargin" id="we14" value="" placeholder="MATH 1111 [MZA](403)">
             <input type="text" name="" class="time4 allInput" id="we24" value="" placeholder="">
             <input type="text" name="" class="time4 allInput" id="we34" value="" placeholder="">
             <input type="text" name="" class="time4 allInput" id="we44" value="" placeholder="">
@@ -203,25 +221,25 @@
         <div id="header7">
             <input type="text" name="" id="time5" value="1:05 PM - 4:00 PM" disabled="">
 
-            <input type="text" name="" class="time5 allInput" id="su15" value="" placeholder="">
-            <input type="text" name="" class="time5 allInput" id="su25" value="" placeholder="">
+            <input type="text" name="" class="time5 allInput" id="su15" value="" placeholder="ICE 1122:[RH, HK, MH, GR] (233)">
+            <input type="text" name="" class="time5 allInput" id="su25" value="" placeholder="ICE 2222 [ RY, EH, MI] (227)">
             <input type="text" name="" class="time5 allInput" id="su35" value="" placeholder="">
             <input type="text" name="" class="time5 allInput" id="su45" value="" placeholder="">
 
-            <input type="text" name="" class="time5 allInput topMargin" id="mo15" value="" placeholder="">
+            <input type="text" name="" class="time5 allInput topMargin" id="mo15" value="" placeholder="PHY	1192 [AMAR, SR, LN, FA-2] (233)">
             <input type="text" name="" class="time5 allInput" id="mo25" value="" placeholder="">
-            <input type="text" name="" class="time5 allInput" id="mo35" value="" placeholder="">
-            <input type="text" name="" class="time5 allInput" id="mo45" value="" placeholder="">
+            <input type="text" name="" class="time5 allInput" id="mo35" value="" placeholder="ICE 3132 [RY, HH, MI] 227">
+            <input type="text" name="" class="time5 allInput" id="mo45" value="" placeholder="ICE 4242 [DD, RUM, MH] (402)	">
 
             <input type="text" name="" class="time5 allInput topMargin" id="tu15" value="" placeholder="">
-            <input type="text" name="" class="time5 allInput" id="tu25" value="" placeholder="">
-            <input type="text" name="" class="time5 allInput" id="tu35" value="" placeholder="">
-            <input type="text" name="" class="time5 allInput" id="tu45" value="" placeholder="">
+            <input type="text" name="" class="time5 allInput" id="tu25" value="" placeholder="ICE 2232 [ DD, LN, GR] (227)">
+            <input type="text" name="" class="time5 allInput" id="tu35" value="" placeholder="ICE 3242 [RY, HK, FA-2] (228)">
+            <input type="text" name="" class="time5 allInput" id="tu45" value="" placeholder="ICE 4212 [FA-1, RH, MRH] (402)">
 
             <input type="text" name="" class="time5 allInput topMargin" id="we15" value="" placeholder="">
             <input type="text" name="" class="time5 allInput" id="we25" value="" placeholder="">
-            <input type="text" name="" class="time5 allInput" id="we35" value="" placeholder="">
-            <input type="text" name="" class="time5 allInput" id="we45" value="" placeholder="">
+            <input type="text" name="" class="time5 allInput" id="we35" value="" placeholder="ICE 3222 [RH, LN, AI] (228)">
+            <input type="text" name="" class="time5 allInput" id="we45" value="" placeholder="ICE 4222 [EH, MRH, GR] (402)">
 
             <input type="text" name="" class="time5 allInput topMargin programming" value="" placeholder="Assigned for Programming Club">
         </div>
@@ -290,5 +308,5 @@
 
     <script src="script.js"></script>
 
-
-</body></html>
+</body>
+</html>

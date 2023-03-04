@@ -105,3 +105,22 @@ if (teacherSelectBox) {
     });
   });
 }
+
+
+//download as pdf
+
+window.jsPDF = window.jspdf.jsPDF;
+var docPDF = new jsPDF();
+const btn=document.querySelector(".headDown img");
+btn.onclick=function(){
+var elementHTML = document.querySelector("body");
+docPDF.html(elementHTML, {
+ callback: function(docPDF) {
+  docPDF.save('Routine.pdf');
+ },
+ x: 15,
+ y: 15,
+ width: 50,
+ windowWidth: 650
+});
+}
