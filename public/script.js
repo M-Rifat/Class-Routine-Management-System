@@ -84,28 +84,28 @@ const addFilterYear = year =>{
   });
 }
 
-window.onload = function () {
-    var selectBox = document.getElementById("selectYear");
-    selectBox.addEventListener('change', changeFunc);
-    function changeFunc() {
-      if(this.value == 0){
-        removeFilterYear();
-      }
-      else if (this.value == 1) {
-        removeFilterYear();
-        addFilterYear('1');
-      }
-      else if (this.value == 2) {
-        removeFilterYear();
-        addFilterYear('2');
-      }
-      else if (this.value == 3) {
-        removeFilterYear();
-        addFilterYear('3');
-      }
-      else{
-        removeFilterYear();
-        addFilterYear('4');
-      }
+//window.onload = function () {
+  const selectBox = document.getElementById("selectYear");
+  selectBox.addEventListener('change', changeFunc);
+  function changeFunc() {
+    if(this.value == 0){
+      removeFilterYear();
+    }
+    else if (this.value == 1) {
+      removeFilterYear();
+      addFilterYear('1');
+    }
+    else if (this.value == 2) {
+      removeFilterYear();
+      addFilterYear('2');
+    }
+    else if (this.value == 3) {
+      removeFilterYear();
+      addFilterYear('3');
+    }
+    else{
+      removeFilterYear();
+      addFilterYear('4');
     }
   }
+  //}
