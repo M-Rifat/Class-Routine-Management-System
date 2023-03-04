@@ -54,13 +54,58 @@ if(updateBtn && window.location.pathname === '/update'){
   });
 }
 
+const removeFilterTeacher  = ()=>{
+  editAbleInput.forEach(el=>{
+    el.classList.remove('filter');
+  });
+}
+
+const removeFilterYear = ()=>{
+  const years = document.querySelectorAll('.year');
+  years.forEach(el=>{
+    el.classList.remove('filter');
+  });
+  editAbleInput.forEach(el=>{
+    el.classList.remove('filter');
+  });
+}
+
+const addFilterYear = year =>{
+  const years = document.querySelectorAll('.year');
+  years.forEach(el=>{
+    if(el.id.startsWith(year)){
+      el.classList.add('filter');
+    }
+  });
+  editAbleInput.forEach(el=>{
+    if(el.id.charAt(2)===year){
+      el.classList.add('filter');
+    }
+  });
+}
+
 window.onload = function () {
     var selectBox = document.getElementById("selectYear");
     selectBox.addEventListener('change', changeFunc);
     function changeFunc() {
-      if (this.value == 2) {
-        let two = document.getElementById('2nd');
-        two.classList.add("filter");
+      if(this.value == 0){
+        removeFilterYear();
+      }
+      else if (this.value == 1) {
+        removeFilterYear();
+        addFilterYear('1');
+      }
+      else if (this.value == 2) {
+        removeFilterYear();
+        addFilterYear('2');
+      }
+      else if (this.value == 3) {
+        removeFilterYear();
+        addFilterYear('3');
+      }
+      else{
+        removeFilterYear();
+        addFilterYear('4');
       }
     }
   }
