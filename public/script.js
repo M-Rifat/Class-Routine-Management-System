@@ -1,12 +1,24 @@
-var dis=document.querySelectorAll('input');
-var ena=document.querySelectorAll('.time1')
+const inputFields=document.querySelectorAll('input');
+const editAbleInput=document.querySelectorAll('.allInput');
 
-// dis.forEach(element => {
-//     element.disabled = true;
-// });
-ena.forEach(element => {
-    element.disabled = false;
-});
+if(inputFields){
+  inputFields.forEach(el=>{
+    el.disabled = true;
+  });
+}
+
+if(editAbleInput){
+  editAbleInput.forEach(el=>{
+    el.value = el.placeholder;
+    el.placeholder = '';
+  });
+}
+
+if(editAbleInput && window.location.pathname === '/update'){
+  editAbleInput.forEach(el=>{
+    el.disabled = false;
+  });
+}
 
 
 window.onload = function () {
