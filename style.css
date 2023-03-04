@@ -115,6 +115,12 @@ h3 {
     align-items: baseline;
 }
 
+.headDown img {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
 .effective {
     display: flex;
     justify-content: center;
@@ -307,7 +313,13 @@ hr {
 }
 
 .chairman h4 {
+    margin-top: 60px;
+    height: 10px;
     font-size: 12px;
+}
+
+.chairman p {
+    height: 5px;
 }
 
 .footerBottom {
@@ -333,6 +345,10 @@ hr {
     font-size: 16px;
     line-height: 24px;
     color: #716E6E;
+}
+
+.footerRight {
+    display: flex;
 }
 
 /* extraClass */

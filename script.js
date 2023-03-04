@@ -4,10 +4,9 @@ var ena=document.querySelectorAll('.time1')
 // dis.forEach(element => {
 //     element.disabled = true;
 // });
-// ena.forEach(element => {
-//     element.disabled = false;
-// });
-
+ena.forEach(element => {
+    element.disabled = false;
+});
 
 
 window.onload = function () {
