@@ -50,6 +50,7 @@ if(updateBtn && window.location.pathname === '/update'){
     if(resp.statusText==='OK'){
       alert('updated successfully');
     }
+    window.location.reload();
   });
 }
 
