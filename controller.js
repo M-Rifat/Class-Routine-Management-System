@@ -8,10 +8,13 @@ exports.submit = async(req,res,next)=>{
     const body = req.body.html;
     const html = '<!DOCTYPE html>\n'+body;
     fs.writeFile('./public/index.html',html,(err)=>{
-        if(!err)console.log('successfully write');
+        if(!err)console.log('successfully write on index.html');
+    });
+    fs.writeFile('./public/update.html',html,(err)=>{
+        if(!err)console.log('successfully write on update.html');
     });
     //console.log(body);
-    res.end('ok');
+    res.send('ok');
 };
 
 exports.update = async(req,res,next)=>{
