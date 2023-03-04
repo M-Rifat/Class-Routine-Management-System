@@ -10,6 +10,7 @@ router.use(express.static(path.join(__dirname,'public')));
 
 router.get('/',controller.get);
 router.post('/submit',controller.submit);
+router.get('/update',controller.update);
 
 const server = router.listen(3000,'0.0.0.0',()=>{
     console.log('app running...');

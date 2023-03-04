@@ -13,3 +13,7 @@ exports.submit = async(req,res,next)=>{
     //console.log(body);
     res.end('ok');
 };
+
+exports.update = async(req,res,next)=>{
+    res.end('./update.html');
+}
