@@ -360,3 +360,29 @@ hr {
 .topMargin {
     margin-top: 37px;
 }
+
+/* hidden class */
+.updateDiv {
+    text-align: right;
+    height: 30px;
+    margin-right: 16px;
+}
+
+.updateButton {
+    padding: 6px 24px;
+    margin-top: 20px;
+    width: 224px;
+    height: 34px;
+    background: #EAE9FF;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: -0.03em;
+    color: #8D8CA9;
+}
+
+.hidden{
+    display: none;
+}
