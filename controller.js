@@ -15,5 +15,7 @@ exports.submit = async(req,res,next)=>{
 };
 
 exports.update = async(req,res,next)=>{
-    res.end('./update.html');
+    const files = fs.readFileSync('./public/update.html','utf-8');
+    //console.log(files);
+    res.send(files);
 }
