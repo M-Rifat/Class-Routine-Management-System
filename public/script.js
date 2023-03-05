@@ -144,5 +144,8 @@ if(loginSubmit){
     if(userId.value === 'admin' && password.value === 'admin'){
       window.location.pathname = '/update';
     }
+    else{
+      window.location.pathname = '/';
+    }
   });
 }
