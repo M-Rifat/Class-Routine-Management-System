@@ -10,7 +10,8 @@
  : <br>
  : <br>
  run in terminal : <br>
-  npm i <br>
-  node server.js <br>
+  >> npm i <br>
+  >> node server.js <br>
+  <br>
   http://127.0.0.1:3000/
 
