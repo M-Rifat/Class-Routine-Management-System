@@ -390,6 +390,59 @@ hr {
     display: none;
 }
 
+/* login */
+.mainLogin{
+    background-color: #fafafd;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+
+    margin: auto;
+    width: 60%;
+    height: 580px;
+    box-shadow: 3.41333px 3.41333px 10.24px 0.853333px rgba(0, 0, 0, 0.07);
+    border-radius: 6.82667px;
+}
+.mainLogin input{
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgba(149, 140, 255, 0.75);
+    margin-bottom: 30px;
+}
+.mainLogin label{
+    color: #8D8CA9;
+    font-weight: 700;
+font-size: 18px;
+}
+.mainLogin .logoDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginField{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.loginField button{
+    border: 1px solid rgba(149, 140, 255, 0.75);
+
+    padding: 6px 24px;
+    width: 200px;
+    height: 34px;
+    background: #EAE9FF;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #8D8CA9;
+    margin-bottom: 20px;
+}
+.loginFieldMain{
+    display: flex;
+}
+.mainLogin hr{
+    border: 1px solid rgba(173, 166, 255, 0.19);
+}
+
+
 /* responsive */
 
 @media (max-width:477px){
