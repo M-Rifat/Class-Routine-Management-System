@@ -4,7 +4,7 @@ const updateBtn = document.querySelector('.updateButton');
 const updateDiv = document.querySelector('.updateDiv');
 const issueDate = document.querySelector('.issueDate');
 
-if (inputFields) {
+if (inputFields && (window.location.pathname==='/'||window.location.pathname==='/update')) {
   inputFields.forEach(el => {
     el.disabled = true;
   });
