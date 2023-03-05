@@ -89,6 +89,8 @@ const addFilterYear = year => {
 
 if (selectBox) {
   selectBox.addEventListener('change', ele => {
+    teacherSelectBox.value = 'Teacher';
+    removeFilterTeacher();
     removeFilterYear();
     addFilterYear(ele.target.value);
   });
@@ -96,8 +98,9 @@ if (selectBox) {
 
 if (teacherSelectBox) {
   teacherSelectBox.addEventListener('change', ele => {
-    removeFilterTeacher();
+    selectBox.value = '0';
     removeFilterYear();
+    removeFilterTeacher();
     console.log(ele.target.value);
     editAbleInput.forEach(elem => {
       //console.log(elem.,cnt++);
