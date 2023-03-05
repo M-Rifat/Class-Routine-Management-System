@@ -1,6 +1,4 @@
-# Class Routine Management System
+# Class Routine Management System for Dept. of ICE,University of Rajshahi
 
- # Website : 
- ##  <br>
+ # Website : https://ice-class-routine.cyclic.app/
 
-<br><h4>  # Prototype : https://www.figma.com/proto/FTCJ91Vn5vX6vzD5vCeIM0/Class-Routine-Management-System(CRMS)?node-id=1%3A354&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A354 </h4>
