@@ -10,7 +10,6 @@ body {
     box-sizing: border-box;
     font-family: 'Montserrat';
     margin: 10px 60px 0px 60px;
-    touch-action: pan-y;
 }
 
 a {
@@ -451,6 +450,12 @@ font-size: 18px;
 
     body{
         width: 1380px;
-        
+        zoom: 26%;  
+    }
+}
+@media (max-width:1390px){
+
+    body{
+        width: 1380px;
     }
 }
