@@ -21,4 +21,9 @@ exports.update = async(req,res,next)=>{
     const files = fs.readFileSync('./public/update.html','utf-8');
     //console.log(files);
     res.send(files);
+};
+
+exports.login = async(req,res,next)=>{
+    const files = fs.readFileSync('./public/login.html','utf-8');
+    res.send(files);
 }

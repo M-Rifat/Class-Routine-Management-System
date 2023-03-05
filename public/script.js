@@ -3,8 +3,11 @@ const editAbleInput = document.querySelectorAll('.allInput');
 const updateBtn = document.querySelector('.updateButton');
 const updateDiv = document.querySelector('.updateDiv');
 const issueDate = document.querySelector('.issueDate');
+const loginBtn = document.querySelector('.login');
+const selectBox = document.getElementById("selectYear");
+const teacherSelectBox = document.querySelector('#selectTeacher');
 
-if (inputFields && (window.location.pathname==='/'||window.location.pathname==='/update')) {
+if (inputFields && (window.location.pathname === '/' || window.location.pathname === '/update')) {
   inputFields.forEach(el => {
     el.disabled = true;
   });
@@ -84,14 +87,13 @@ const addFilterYear = year => {
   });
 }
 
-const selectBox = document.getElementById("selectYear");
-selectBox.addEventListener('change', ele => {
-  removeFilterYear();
-  addFilterYear(ele.target.value);
-});
+if (selectBox) {
+  selectBox.addEventListener('change', ele => {
+    removeFilterYear();
+    addFilterYear(ele.target.value);
+  });
+}
 
-const teacherSelectBox = document.querySelector('#selectTeacher');
-let cnt = 0;
 if (teacherSelectBox) {
   teacherSelectBox.addEventListener('change', ele => {
     removeFilterTeacher();
@@ -106,21 +108,29 @@ if (teacherSelectBox) {
   });
 }
 
-
 //download as pdf
 
-window.jsPDF = window.jspdf.jsPDF;
-var docPDF = new jsPDF();
-const btn=document.querySelector(".headDown img");
-btn.onclick=function(){
-var elementHTML = document.querySelector("body");
-docPDF.html(elementHTML, {
- callback: function(docPDF) {
-  docPDF.save('Routine.pdf');
- },
- x: 0,
- y: 0,
- width: 170,
- windowWidth: 1380
-});
+const btn = document.querySelector(".headDown img");
+if (btn) {
+  window.jsPDF = window.jspdf.jsPDF;
+  var docPDF = new jsPDF();
+  btn.onclick = function () {
+    var elementHTML = document.querySelector("body");
+    docPDF.html(elementHTML, {
+      callback: function (docPDF) {
+        docPDF.save('Routine.pdf');
+      },
+      x: 0,
+      y: 0,
+      width: 170,
+      windowWidth: 1380
+    });
+  }
+}
+
+
+if (loginBtn) {
+  loginBtn.addEventListener('click', el => {
+    window.location.pathname = '/login';
+  });
 }

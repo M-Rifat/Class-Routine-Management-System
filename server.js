@@ -9,6 +9,7 @@ router.use(bodyParser.json());
 router.use(express.static(path.join(__dirname,'public')));
 
 router.get('/',controller.get);
+router.get('/login',controller.login);
 router.get('/update',controller.update);
 router.post('/submit',controller.submit);
 
