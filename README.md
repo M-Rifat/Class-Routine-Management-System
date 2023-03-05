@@ -6,11 +6,11 @@
  
  To run this project in vscode
  
- install node
- :
- :
- run in terminal :
-  npm i
-  node server.js
+ install node <br>
+ : <br>
+ : <br>
+ run in terminal : <br>
+  npm i <br>
+  node server.js <br>
   http://127.0.0.1:3000/
 
