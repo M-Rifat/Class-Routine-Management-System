@@ -109,7 +109,6 @@ if (teacherSelectBox) {
 }
 
 //download as pdf
-
 const btn = document.querySelector(".headDown img");
 if (btn) {
   window.jsPDF = window.jspdf.jsPDF;
@@ -120,14 +119,15 @@ if (btn) {
       callback: function (docPDF) {
         docPDF.save('Routine.pdf');
       },
-      x: 10,
+      x: 20,
       y: 0,
       width: 170,
-      windowWidth: screen.availWidth
+      windowWidth: screen.width
     });
   }
 }
 
+//loginButton
 
 if (loginBtn) {
   loginBtn.addEventListener('click', el => {
