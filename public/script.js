@@ -120,10 +120,10 @@ if (btn) {
       callback: function (docPDF) {
         docPDF.save('Routine.pdf');
       },
-      x: 0,
+      x: 10,
       y: 0,
       width: 170,
-      windowWidth: 1380
+      windowWidth: screen.availWidth
     });
   }
 }
