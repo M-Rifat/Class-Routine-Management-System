@@ -118,9 +118,9 @@ docPDF.html(elementHTML, {
  callback: function(docPDF) {
   docPDF.save('Routine.pdf');
  },
- x: 15,
- y: 15,
- width: 50,
- windowWidth: 650
+ x: 0,
+ y: 0,
+ width: 170,
+ windowWidth: 1380
 });
 }
