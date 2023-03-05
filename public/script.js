@@ -134,3 +134,15 @@ if (loginBtn) {
     window.location.pathname = '/login';
   });
 }
+
+const loginSubmit = document.querySelector('#loginBTN');
+if(loginSubmit){
+  loginSubmit.addEventListener('click',el=>{
+    el.preventDefault();
+    const userId = document.querySelector('#userid');
+    const password = document.querySelector('#password');
+    if(userId.value === 'admin' && password.value === 'admin'){
+      window.location.pathname = '/update';
+    }
+  });
+}
