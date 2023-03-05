@@ -103,7 +103,6 @@ if (teacherSelectBox) {
     removeFilterTeacher();
     console.log(ele.target.value);
     editAbleInput.forEach(elem => {
-      //console.log(elem.,cnt++);
       if (elem.value.includes(ele.target.value)) {
         elem.classList.add('filter');
       }
