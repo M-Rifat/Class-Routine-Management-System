@@ -459,3 +459,19 @@ font-size: 18px;
         width: 1380px;
     }
 }
+
+@media (max-width:1700px){
+
+    body{
+        width: 1380px;
+        zoom: 105%;
+    }
+}
+
+@media (max-width:1930px){
+
+    body{
+        width: 1380px;
+        zoom: 120%;
+    }
+}
