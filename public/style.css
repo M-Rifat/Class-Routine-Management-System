@@ -463,7 +463,8 @@ font-size: 18px;
 @media (min-width:1530px){
 
     body{
-        width: 1536px; 
+        width: 1380px; 
+        zoom: 101%; 
     }
 }
 
