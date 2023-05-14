@@ -151,3 +151,9 @@ if(loginSubmit){
     }
   });
 }
+
+// admin
+if(window.location.pathname=='/update'){
+  loginBtn.textContent="Admin";
+  loginBtn.disabled=true;
+}

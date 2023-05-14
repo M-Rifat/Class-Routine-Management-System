@@ -453,14 +453,21 @@ font-size: 18px;
         zoom: 26%;  
     }
 }
-@media (max-width:1390px){
+@media (min-width:1340px){
 
     body{
-        width: 1380px;
+        width: 1380px; 
+        zoom: 90%; 
+    }
+}
+@media (min-width:1530px){
+
+    body{
+        width: 1536px; 
     }
 }
 
-@media (max-width:1700px){
+@media (min-width:1660px){
 
     body{
         width: 1380px;
@@ -468,10 +475,10 @@ font-size: 18px;
     }
 }
 
-@media (max-width:1930px){
+@media (min-width:1880px){
 
     body{
         width: 1380px;
-        zoom: 120%;
+        zoom: 105%;
     }
 }
