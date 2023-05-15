@@ -116,7 +116,7 @@ if (btn) {
   window.jsPDF = window.jspdf.jsPDF;
   var docPDF = new jsPDF();
   btn.onclick = function () {
-    var elementHTML = document.querySelector("body");
+    var elementHTML = document.getElementById("full-content");
     docPDF.html(elementHTML, {
       callback: function (docPDF) {
         docPDF.save('Routine.pdf');
