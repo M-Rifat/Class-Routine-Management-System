@@ -356,8 +356,8 @@ hr {
 
 /* extraClass */
 .filter {
-    background: rgba(27, 23, 68, 0.59);
-    color: white;
+    background: #1b174496 !important;
+    color: white !important;
 }
 
 .topMargin {

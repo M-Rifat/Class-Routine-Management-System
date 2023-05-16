@@ -6,6 +6,7 @@ const issueDate = document.querySelector('.issueDate');
 const loginBtn = document.querySelector('.login');
 const selectBox = document.getElementById("selectYear");
 const teacherSelectBox = document.querySelector('#selectTeacher');
+const yearClass = document.querySelectorAll('.year');
 
 if (inputFields && (window.location.pathname === '/' || window.location.pathname === '/update')) {
   inputFields.forEach(el => {
@@ -17,7 +18,38 @@ if (editAbleInput) {
   editAbleInput.forEach(el => {
     el.value = el.placeholder;
     el.placeholder = '';
+
+    //new code
+    //console.log(el.id);
+    el.style.color = 'white';
+    if (el.id.charAt(2) == '1') {
+      el.style.backgroundColor = '#716E6E';
+    }
+    else if (el.id.charAt(2) == '2') {
+      el.style.backgroundColor = '#6563e5'
+    } else if (el.id.charAt(2) == '3') {
+      el.style.backgroundColor = '#ba2e43';
+    } else {
+      el.style.backgroundColor = '#5d1a24'
+    }
   });
+}
+
+//new added
+if (yearClass) {
+  yearClass.forEach(el => {
+    el.style.color = 'white';
+    if (el.id.includes('1st')) {
+      el.style.backgroundColor = '#716E6E';
+    }
+    else if (el.id.includes('2nd')) {
+      el.style.backgroundColor = '#6563e5'
+    } else if (el.id.includes('3rd')) {
+      el.style.backgroundColor = '#ba2e43';
+    } else {
+      el.style.backgroundColor = '#5d1a24'
+    }
+  })
 }
 
 if (editAbleInput && window.location.pathname === '/update') {
@@ -67,9 +99,13 @@ const removeFilterYear = () => {
   const years = document.querySelectorAll('.year');
   years.forEach(el => {
     el.classList.remove('filter');
+    el.style.backgroundColor = 'white';
+    el.style.color = '#9A8F8F'
   });
   editAbleInput.forEach(el => {
     el.classList.remove('filter');
+    el.style.backgroundColor = 'white';
+    el.style.color = '#9A8F8F'
   });
 }
 
@@ -138,22 +174,24 @@ if (loginBtn) {
 }
 
 const loginSubmit = document.querySelector('#loginBTN');
-if(loginSubmit){
-  loginSubmit.addEventListener('click',el=>{
+if (loginSubmit) {
+  loginSubmit.addEventListener('click', el => {
     el.preventDefault();
     const userId = document.querySelector('#userid');
     const password = document.querySelector('#password');
-    if(userId.value === 'admin' && password.value === 'admin'){
+    if (userId.value === 'admin' && password.value === 'admin') {
       window.location.pathname = '/update';
     }
-    else{
+    else {
       window.location.pathname = '/';
     }
   });
 }
 
 // admin
-if(window.location.pathname=='/update'){
-  loginBtn.textContent="Admin";
-  loginBtn.disabled=true;
+if (window.location.pathname == '/update') {
+  loginBtn.textContent = "Admin";
+  loginBtn.disabled = true;
 }
+
+
