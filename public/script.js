@@ -7,6 +7,10 @@ const loginBtn = document.querySelector('.login');
 const selectBox = document.getElementById("selectYear");
 const teacherSelectBox = document.querySelector('#selectTeacher');
 const yearClass = document.querySelectorAll('.year');
+const noOfClass = document.querySelector('.noOfClass');
+const noOfClassP = document.querySelector('.noOfClassP');
+
+if(noOfClassP) noOfClassP.classList.add('hidden');
 
 if (inputFields && (window.location.pathname === '/' || window.location.pathname === '/update')) {
   inputFields.forEach(el => {
@@ -138,11 +142,15 @@ if (teacherSelectBox) {
     removeFilterYear();
     removeFilterTeacher();
     console.log(ele.target.value);
+    let cnt = 0;
     editAbleInput.forEach(elem => {
       if (elem.value.includes(ele.target.value)) {
         elem.classList.add('filter');
+        cnt++;
       }
     });
+    noOfClass.textContent = cnt;
+    noOfClassP.classList.remove('hidden');
   });
 }
 
