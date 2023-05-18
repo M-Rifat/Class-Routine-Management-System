@@ -32,9 +32,9 @@ if (editAbleInput) {
     else if (el.id.charAt(2) == '2') {
       el.style.backgroundColor = '#6563e5'
     } else if (el.id.charAt(2) == '3') {
-      el.style.backgroundColor = '#ba2e43';
+      el.style.backgroundColor = '#70363f';
     } else {
-      el.style.backgroundColor = '#5d1a24'
+      el.style.backgroundColor = '#40863e'
     }
   });
 }
@@ -49,9 +49,9 @@ if (yearClass) {
     else if (el.id.includes('2nd')) {
       el.style.backgroundColor = '#6563e5'
     } else if (el.id.includes('3rd')) {
-      el.style.backgroundColor = '#ba2e43';
+      el.style.backgroundColor = '#70363f';
     } else {
-      el.style.backgroundColor = '#5d1a24'
+      el.style.backgroundColor = '#40863e'
     }
   })
 }
