@@ -1,6 +1,6 @@
 # Class Routine Management System for Dept. of ICE,University of Rajshahi
 
- # Website : https://class-routine-ice.cyclic.app/
+ # Website : https://class-routine-ice.vercel.app/
  
  
  
